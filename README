@@ -1,0 +1,20 @@
+LogParser coding challenge 
+
+
+
+Requirements
+  - Python 3.6.2 or greater
+
+All commands below must be executed from inside src folder 
+
+Unit tests
+    python -m unittest discover -p test*.py
+
+The number of request for each route category
+    python read_logs.py --file=../devops_logs.txt --action=routes_by_category
+
+The average response time, the standard deviation and the 98th percentile of the response time for the shortroute requests category
+    python read_logs.py --file=../devops_logs.txt --action=statistics
+
+The max route length present in the dataset.
+    python read_logs.py --file=../devops_logs.txt --action=longest_route
